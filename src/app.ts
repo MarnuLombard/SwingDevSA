@@ -25,5 +25,5 @@ app.use('*', (req: express.Request, res: express.Response) => {
 app.use((err: any, req: express.Request, res: express.Response, next: express.NextFunction) => {
   res
     .status(500)
-    .send(err.message ? err.message : err)
+    .send(err.message || err)
 })
