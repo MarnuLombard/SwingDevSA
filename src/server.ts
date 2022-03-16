@@ -1,4 +1,4 @@
-import * as envVar from 'env-var';
+import envVar from 'env-var';
 
 import { app } from './app';
 

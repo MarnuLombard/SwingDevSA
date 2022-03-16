@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Backend recruitment assignment",
   "private": true,
+  "type": "module",
   "scripts": {
     "start:watch": "TS_NODE_TRANSPILE_ONLY='true' nodemon --exec ts-node -e ts,js,json src/server.ts",
     "start": "TS_NODE_TRANSPILE_ONLY='true' ts-node src/server.ts",
