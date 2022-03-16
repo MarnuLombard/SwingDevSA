@@ -1,9 +1,13 @@
-module.exports = {
+export default {
   moduleFileExtensions: ['js','json', 'ts'],
   roots: ['<rootDir>/test'],
   testEnvironment: "node",
-  testRegex: '.spec.(t|j)s$',
+  testRegex: '.(t|j)s$',
   transform: {
-    '^.+\\.(t|j)s$': 'ts-jest'
-  }
+    "(^.+\\.(ts|tsx)$)|(node-fetch)|(data-uri-to-buffer)|(fetch-blob)/.*\.[cm]?js$": "ts-jest",
+    "\.esm\.(min)?\.js$": "ts-jest",
+    "^.+\\.(js)$": "babel-jest",
+  },
+  transformIgnorePatterns: [
+  ],
 }
