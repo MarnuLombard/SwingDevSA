@@ -16,7 +16,6 @@ app.use(bodyParser.json())
 app.use(cors())
 
 // Routes
-app.use('/hello', helloRoutes)
 app.use('/exchange-rate', exchangeRateRoutes)
 
 app.use('*', (req: express.Request, res: express.Response) => {
